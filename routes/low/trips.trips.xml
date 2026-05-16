@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-05-16 13:21:34.191113 by Eclipse SUMO randomTrips.py v1_26_0+0000-fa7df22d7f1
+<configuration>
+    <net-file value="C:\Users\sahan\Desktop\VS Code\TrafficControlSystem\networks\grid_4x4\network.net.xml"/>
+    <output-trip-file value="C:\Users\sahan\Desktop\VS Code\TrafficControlSystem\routes\low\trips.trips.xml"/>
+    <route-file value="C:\Users\sahan\Desktop\VS Code\TrafficControlSystem\routes\low\routes.rou.xml"/>
+    <trip-attributes value="type=&quot;civilian&quot;"/>
+    <fringe-factor value="2"/>
+    <period value="36.0"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <trip id="0" depart="0.00" from="C1D1" to="A0B0" type="civilian"/>
+    <trip id="1" depart="36.00" from="B1A1" to="B0A0" type="civilian"/>
+    <trip id="2" depart="72.00" from="C3B3" to="C2C1" type="civilian"/>
+    <trip id="3" depart="108.00" from="D1D2" to="A1B1" type="civilian"/>
+    <trip id="4" depart="144.00" from="B2C2" to="A0B0" type="civilian"/>
+    <trip id="5" depart="180.00" from="B0A0" to="C0B0" type="civilian"/>
+    <trip id="6" depart="216.00" from="A0B0" to="A3B3" type="civilian"/>
+    <trip id="7" depart="252.00" from="C2B2" to="C0D0" type="civilian"/>
+    <trip id="8" depart="288.00" from="B0A0" to="C1C0" type="civilian"/>
+    <trip id="9" depart="324.00" from="D0C0" to="A0A1" type="civilian"/>
+    <trip id="10" depart="360.00" from="D0C0" to="C2C3" type="civilian"/>
+    <trip id="11" depart="396.00" from="B1C1" to="A2B2" type="civilian"/>
+    <trip id="12" depart="432.00" from="D2D3" to="B1C1" type="civilian"/>
+    <trip id="13" depart="468.00" from="A1B1" to="A1B1" type="civilian"/>
+    <trip id="14" depart="504.00" from="D1C1" to="C1C0" type="civilian"/>
+    <trip id="15" depart="540.00" from="D0C0" to="C3B3" type="civilian"/>
+    <trip id="16" depart="576.00" from="C0C1" to="D3C3" type="civilian"/>
+    <trip id="17" depart="612.00" from="B2B1" to="C0D0" type="civilian"/>
+    <trip id="18" depart="648.00" from="D0D1" to="C1C2" type="civilian"/>
+    <trip id="19" depart="684.00" from="D1D0" to="C1B1" type="civilian"/>
+    <trip id="20" depart="720.00" from="C2C3" to="A1A0" type="civilian"/>
+    <trip id="21" depart="756.00" from="B0A0" to="B1A1" type="civilian"/>
+    <trip id="22" depart="792.00" from="A1A2" to="B0B1" type="civilian"/>
+    <trip id="23" depart="828.00" from="A1B1" to="B1A1" type="civilian"/>
+    <trip id="24" depart="864.00" from="C1D1" to="B2A2" type="civilian"/>
+    <trip id="25" depart="900.00" from="B2A2" to="B0A0" type="civilian"/>
+    <trip id="26" depart="936.00" from="B0C0" to="D2D1" type="civilian"/>
+    <trip id="27" depart="972.00" from="C2B2" to="C1C2" type="civilian"/>
+    <trip id="28" depart="1008.00" from="A3A2" to="C2D2" type="civilian"/>
+    <trip id="29" depart="1044.00" from="A2B2" to="B2B1" type="civilian"/>
+    <trip id="30" depart="1080.00" from="D3D2" to="C1D1" type="civilian"/>
+    <trip id="31" depart="1116.00" from="C0D0" to="C2C1" type="civilian"/>
+    <trip id="32" depart="1152.00" from="D1C1" to="C3D3" type="civilian"/>
+    <trip id="33" depart="1188.00" from="B0A0" to="A0B0" type="civilian"/>
+    <trip id="34" depart="1224.00" from="B1B2" to="B0C0" type="civilian"/>
+    <trip id="35" depart="1260.00" from="B0A0" to="D2D3" type="civilian"/>
+    <trip id="36" depart="1296.00" from="D1D2" to="B1B2" type="civilian"/>
+    <trip id="37" depart="1332.00" from="C2B2" to="B2B1" type="civilian"/>
+    <trip id="38" depart="1368.00" from="D2C2" to="B3B2" type="civilian"/>
+    <trip id="39" depart="1404.00" from="B0C0" to="B0B1" type="civilian"/>
+    <trip id="40" depart="1440.00" from="C0D0" to="B0C0" type="civilian"/>
+    <trip id="41" depart="1476.00" from="C1C0" to="D2C2" type="civilian"/>
+    <trip id="42" depart="1512.00" from="B2B3" to="B0A0" type="civilian"/>
+    <trip id="43" depart="1548.00" from="D3D2" to="C0B0" type="civilian"/>
+    <trip id="44" depart="1584.00" from="A1B1" to="A1A0" type="civilian"/>
+    <trip id="45" depart="1620.00" from="A2A1" to="C1D1" type="civilian"/>
+    <trip id="46" depart="1656.00" from="D0C0" to="B2C2" type="civilian"/>
+    <trip id="47" depart="1692.00" from="A1A2" to="B2B1" type="civilian"/>
+    <trip id="48" depart="1728.00" from="D3D2" to="C0C1" type="civilian"/>
+    <trip id="49" depart="1764.00" from="D3C3" to="D1D0" type="civilian"/>
+    <trip id="50" depart="1800.00" from="A0A1" to="C2D2" type="civilian"/>
+    <trip id="51" depart="1836.00" from="C2C1" to="C0C1" type="civilian"/>
+    <trip id="52" depart="1872.00" from="B0C0" to="C1D1" type="civilian"/>
+    <trip id="53" depart="1908.00" from="A2A1" to="B2C2" type="civilian"/>
+    <trip id="54" depart="1944.00" from="B3A3" to="D2D3" type="civilian"/>
+    <trip id="55" depart="1980.00" from="D1D2" to="B0C0" type="civilian"/>
+    <trip id="56" depart="2016.00" from="C0B0" to="A3A2" type="civilian"/>
+    <trip id="57" depart="2052.00" from="D2C2" to="D1D0" type="civilian"/>
+    <trip id="58" depart="2088.00" from="B1B0" to="C1D1" type="civilian"/>
+    <trip id="59" depart="2124.00" from="C1C2" to="A2B2" type="civilian"/>
+    <trip id="60" depart="2160.00" from="C3C2" to="C0C1" type="civilian"/>
+    <trip id="61" depart="2196.00" from="C3D3" to="C0C1" type="civilian"/>
+    <trip id="62" depart="2232.00" from="A0A1" to="B1B2" type="civilian"/>
+    <trip id="63" depart="2268.00" from="A0A1" to="D2D1" type="civilian"/>
+    <trip id="64" depart="2304.00" from="D1D2" to="D0D1" type="civilian"/>
+    <trip id="65" depart="2340.00" from="B1B0" to="A1A0" type="civilian"/>
+    <trip id="66" depart="2376.00" from="D1D2" to="D2D3" type="civilian"/>
+    <trip id="67" depart="2412.00" from="A1B1" to="B3C3" type="civilian"/>
+    <trip id="68" depart="2448.00" from="A1A2" to="C3C2" type="civilian"/>
+    <trip id="69" depart="2484.00" from="C3C2" to="A2A3" type="civilian"/>
+    <trip id="70" depart="2520.00" from="B3B2" to="C0D0" type="civilian"/>
+    <trip id="71" depart="2556.00" from="B0C0" to="D1D0" type="civilian"/>
+    <trip id="72" depart="2592.00" from="B2C2" to="B0A0" type="civilian"/>
+    <trip id="73" depart="2628.00" from="C0C1" to="C3B3" type="civilian"/>
+    <trip id="74" depart="2664.00" from="A3B3" to="B1B0" type="civilian"/>
+    <trip id="75" depart="2700.00" from="D3D2" to="C2B2" type="civilian"/>
+    <trip id="76" depart="2736.00" from="B3A3" to="C0B0" type="civilian"/>
+    <trip id="77" depart="2772.00" from="A2A1" to="B0A0" type="civilian"/>
+    <trip id="78" depart="2808.00" from="B1C1" to="C1C0" type="civilian"/>
+    <trip id="79" depart="2844.00" from="B0B1" to="B0A0" type="civilian"/>
+    <trip id="80" depart="2880.00" from="A1A2" to="C1D1" type="civilian"/>
+    <trip id="81" depart="2916.00" from="B0A0" to="D2C2" type="civilian"/>
+    <trip id="82" depart="2952.00" from="D1D0" to="A1A2" type="civilian"/>
+    <trip id="83" depart="2988.00" from="B0B1" to="C2C1" type="civilian"/>
+    <trip id="84" depart="3024.00" from="B0A0" to="A2A3" type="civilian"/>
+    <trip id="85" depart="3060.00" from="D2D1" to="C1B1" type="civilian"/>
+    <trip id="86" depart="3096.00" from="B3B2" to="C3D3" type="civilian"/>
+    <trip id="87" depart="3132.00" from="D0C0" to="A3B3" type="civilian"/>
+    <trip id="88" depart="3168.00" from="A1B1" to="B2C2" type="civilian"/>
+    <trip id="89" depart="3204.00" from="B2C2" to="B3B2" type="civilian"/>
+    <trip id="90" depart="3240.00" from="C2D2" to="C2C1" type="civilian"/>
+    <trip id="91" depart="3276.00" from="D3D2" to="A1B1" type="civilian"/>
+    <trip id="92" depart="3312.00" from="B2B3" to="B1C1" type="civilian"/>
+    <trip id="93" depart="3348.00" from="D1D0" to="B0B1" type="civilian"/>
+    <trip id="94" depart="3384.00" from="A3B3" to="B3A3" type="civilian"/>
+    <trip id="95" depart="3420.00" from="B2C2" to="B1A1" type="civilian"/>
+    <trip id="96" depart="3456.00" from="B0B1" to="D2D1" type="civilian"/>
+    <trip id="97" depart="3492.00" from="B3A3" to="D1D0" type="civilian"/>
+    <trip id="98" depart="3528.00" from="C0D0" to="A1A0" type="civilian"/>
+    <trip id="99" depart="3564.00" from="D3D2" to="D1C1" type="civilian"/>
+</routes>

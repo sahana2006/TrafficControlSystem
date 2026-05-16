@@ -1,0 +1,2 @@
+controller,traffic_profile,grid,EVTT,EVSF,GWSR,CVDI,TRE,ICP,SAS,recovery_time_s
+rule_based,medium,grid_4x4,87.0,0,1.0,89.426,0.03333333333333333,0.007171874999999995,1.0,30.0

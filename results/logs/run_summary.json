@@ -1,0 +1,16 @@
+{
+  "controller": "rule_based",
+  "traffic_profile": "medium",
+  "grid": "grid_4x4",
+  "EVTT": 87.0,
+  "EVSF": 0,
+  "GWSR": 1.0,
+  "CVDI": 89.426,
+  "TRE": 0.03333333333333333,
+  "ICP": 0.007171874999999995,
+  "SAS": 1.0,
+  "evtt_per_vehicle": [
+    87.0
+  ],
+  "recovery_time_s": 30.0
+}
