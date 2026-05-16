@@ -1,29 +1,27 @@
 # Emergency Vehicle Traffic Control — run commands
 
-# 1. Install
 pip install -r requirements.txt
 
-# 2. Set SUMO (Windows PowerShell)
 $env:SUMO_HOME = "C:\Program Files (x86)\Eclipse\Sumo"
 $env:PATH = "$env:SUMO_HOME\bin;$env:PATH"
 
-GUI + default logs + graphs
-python main.py --gui
+# First-time setup
+python main.py --build
 
-Heavier traffic (700 vehicles)
-python main.py --gui --traffic high
+# Rule-Based controller
+python main.py --controller rule_based
 
-Run for 1200 seconds
-python main.py --gui --end 1200
+# DQN controller (trains online, saves model to results/models/dqn.pt)
+python main.py --controller dqn
 
-General log every 3 s
-python main.py --gui --log-interval 3
+# Compare Rule-Based vs DQN + generate comparison graphs
+python main.py --compare
 
-EV position/speed log every 1 s
-python main.py --gui --ev-log-interval 1
+# GUI + logs + graphs (zoomed-out, tracks red EV_1)
+python main.py --gui --controller dqn --log-interval 5 --ev-log-interval 1
 
-GUI + logs only, no graphs
-python main.py --gui --no-plots
+# Full comparison with GUI
+python main.py --compare --gui --end 900
 
-GUI + frequent EV logs + medium traffic
-python main.py --gui --traffic medium --end 900 --log-interval 5 --ev-log-interval 1
+# SUMO-GUI only (no Python controller)
+sumo-gui -c simulation.sumocfg

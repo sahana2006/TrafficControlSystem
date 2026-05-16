@@ -30,7 +30,7 @@ class ActionHandler:
 
         current = traci.trafficlight.getPhase(tls_id)
         try:
-            n_phases = traci.trafficlight.getPhaseNumber(tls_id)
+            n_phases = len(traci.trafficlight.getCompleteRedYellowGreenDefinition(tls_id))
         except (traci.TraCIException, AttributeError):
             n_phases = 4
         n_phases = max(n_phases, 1)

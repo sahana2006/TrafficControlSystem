@@ -1,1 +1,3 @@
-# Future: DQN controller — implement BaseController interface from environment.sumo_env
+from controllers.dqn.dqn_controller import DQNController
+
+__all__ = ["DQNController"]

@@ -1,0 +1,20 @@
+{
+  "controller": "dqn",
+  "controller_type": "dqn",
+  "traffic_profile": "medium",
+  "grid": "grid_4x4",
+  "EVTT": 0.0,
+  "EVSF": 0,
+  "GWSR": 1.0,
+  "CVDI": 91.522,
+  "TRE": 0.0,
+  "ICP": 0.03147604166666615,
+  "SAS": 1.0,
+  "total_reward": -4658.780424834519,
+  "evtt_per_vehicle": [
+    0.0
+  ],
+  "recovery_time_s": null,
+  "dqn_total_reward": -4658.780424834519,
+  "dqn_epsilon": 0.13813899162906138
+}

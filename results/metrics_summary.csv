@@ -1,2 +1,2 @@
-controller,traffic_profile,grid,EVTT,EVSF,GWSR,CVDI,TRE,ICP,SAS,recovery_time_s
-rule_based,medium,grid_4x4,79.0,0,1.0,88.442,0.03333333333333333,0.006136458333333339,1.0,30.0
+controller,controller_type,traffic_profile,grid,EVTT,EVSF,GWSR,CVDI,TRE,ICP,SAS,total_reward,recovery_time_s
+dqn,dqn,medium,grid_4x4,0.0,0,1.0,91.522,0.0,0.03147604166666615,1.0,-4658.780424834519,

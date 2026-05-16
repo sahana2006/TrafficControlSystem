@@ -16,13 +16,13 @@ from metrics import cvdi, evsf, evtt, gwsr, icp, sas, tre
 
 STREAM_COLUMNS = [
     "timestamp",
-    "ev_speed",
-    "ev_position",
+    "controller_type",
     "evtt",
     "evsf",
     "queue_length",
     "gwsr",
     "cvdi",
+    "reward",
 ]
 
 
@@ -31,6 +31,8 @@ class MetricsCollector:
         self.reset()
 
     def reset(self) -> None:
+        self._cumulative_reward = 0.0
+        self._step_reward = 0.0
         self.timeseries: list[dict[str, Any]] = []
         self.decisions: list[str] = []
         self.ev_stops: dict[str, int] = {}
@@ -41,8 +43,13 @@ class MetricsCollector:
         self.recovery_series: list[tuple[float, float]] = []
         self._summary: dict[str, Any] = {}
         self._ev_departure: float | None = None
+        self._step_reward = 0.0
+        self._cumulative_reward = 0.0
         self._stream_path = config.METRICS_CSV
         self._init_stream_csv()
+
+    def reset_cumulative_reward(self) -> None:
+        self._cumulative_reward = 0.0
 
     def _init_stream_csv(self) -> None:
         config.ensure_dirs()
@@ -133,14 +140,19 @@ class MetricsCollector:
 
         self._append_stream_row({
             "timestamp": f"{sim_time:.1f}",
-            "ev_speed": f"{ev_speed:.2f}",
-            "ev_position": ev_pos_str,
+            "controller_type": config.ACTIVE_CONTROLLER,
             "evtt": f"{evtt_run:.1f}",
             "evsf": str(evsf_run),
             "queue_length": f"{avg_q:.2f}",
             "gwsr": f"{gwsr_run:.4f}",
             "cvdi": f"{cvdi_run:.4f}",
+            "reward": f"{self._cumulative_reward:.4f}",
         })
+        self._step_reward = 0.0
+
+    def record_reward(self, reward: float) -> None:
+        self._step_reward += reward
+        self._cumulative_reward += reward
 
     def record_decision(self, kind: str) -> None:
         self.decisions.append(kind)
@@ -176,6 +188,7 @@ class MetricsCollector:
 
         self._summary = {
             "controller": config.ACTIVE_CONTROLLER,
+            "controller_type": config.ACTIVE_CONTROLLER,
             "traffic_profile": config.TRAFFIC_PROFILE,
             "grid": config.GRID_NAME,
             "EVTT": evtt_mean,
@@ -185,6 +198,7 @@ class MetricsCollector:
             "TRE": tre_val,
             "ICP": icp_mean,
             "SAS": sas_val,
+            "total_reward": self._cumulative_reward,
             "evtt_per_vehicle": evtt_vals,
             "recovery_time_s": recovery_time,
         }
